@@ -1,0 +1,67 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+    padding: 2cm;
+
+}
+
+.button{
+    align-items: center;
+    color: black;
+    height: 1cm;
+    width: 3cm;
+    justify-content: center;
+    display: flex;
+    background-color: aqua;
+    border-radius: 0.2cm;
+}
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.button:hover{
+    background-color: white;
+}
+
+.options{
+    background-color: slategrey;
+    animation: fadein 1s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    border-radius: 0.2cm;
+    padding: 2cm;
+    outline: 2px solid blue;
+    box-shadow: 0 0 0px black;
+    transition: all ease 0.5s;
+}
+
+.sketch{
+    animation: fadein 1s ease;
+    display: grid;
+    user-select: none;
+    width: 600px;
+    height: 600px;
+    outline: 2px solid blue;
+    box-shadow: 0 0 0px black;
+    transition: all ease 0.5s;
+}
+
+.sketch:hover, .options:hover{
+    box-shadow: 0 0 10px blue;
+}
+
+body{
+    background-color: wheat;
+    color: black;
+    transition: all ease 0.5s;
+}
+body.white{
+    background-color: black;
+    color: white;
+}

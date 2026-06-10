@@ -1,0 +1,132 @@
+.HeadContain{
+    display:grid;
+    color: white;
+    background-color: rgb(12, 41, 46);
+    justify-content: space-around;
+    padding:1cm 2cm 2cm 2cm;
+    grid-template-columns: repeat(2, 1fr);
+    gap:50px;
+}
+.HeadContain #Links, .HeadContain #HTImg{
+    justify-self: end;
+}
+
+.HeadContain #HTImg{
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: grey;
+    background-image: url("bk.jpg");
+    background-size: cover;
+
+}
+.FootContain{
+    display: flex;
+    background-color: grey;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.Button{
+    align-items: center;
+    color: black;
+    height: 1cm;
+    width: 3cm;
+    justify-content: center;
+    display: flex;
+    background-color: aqua;
+    border-radius: 0.2cm;
+}
+
+.Button:hover{
+    background-color: white;
+}
+
+body{
+    margin:0%;
+    background-image: url("bk.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.Border{
+    width:auto;
+    height: 1cm;
+    background-color: black;
+    color: black;
+    display: flex;
+}
+.One{
+    background-color: white;
+    width:auto;
+    height: 7cm;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap:20px;
+    flex-direction: column;
+    
+}
+
+.boxes{
+    width: auto;
+    height: 3cm;
+    justify-content: space-between;
+    display:flex;
+    gap: 100px;
+}
+
+.box1,.box2,.box3,.box4{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2cm;
+    background-color: inherit;
+    border: 2px solid blue;
+}
+
+.Two{
+    backdrop-filter: blur(10px);
+    background-color: rgba(grey, grey, grey, 0.7);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: auto;
+    padding: 1cm 5cm 1cm 5cm;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.Two .quoter{
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+.Three{
+    background-color: white;
+    display: flex;
+    padding: 2cm;
+    justify-content: center;
+    align-items: center;
+}
+
+.bluebox{
+    display: flex;
+    width: 25cm;
+    padding: 1cm;
+    border-radius: 0.2cm;
+    background-color: rgb(114, 133, 255);
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 2s ease;
+}
+
+.bluebox.show{
+    transform: translateY(0px);
+    opacity: 1;
+}
